@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Example</title>
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<p th:text="'Today is: ' + ${#dates.format(new java.util.Date(), 'dd-MM-yyyy')}"></p>
+</body>
+</html>
