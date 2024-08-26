@@ -5,6 +5,42 @@
 </head>
 <body>
 <h1 th:text="${message}"></h1>
-<p th:text="'Today is: ' + ${#dates.format(new java.util.Date(), 'dd-MM-yyyy')}"></p>
+
+<form id="greetingForm">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name">
+    <button type="button" onclick="fetchGreeting()">Get Greeting</button>
+</form>
+
+<p id="greetingResult"></p>
+
+<button type="button" onclick="fetchAllGreetings()">Get All Greetings</button>
+
+<ul id="greetingsList"></ul>
+
+<script>
+    function fetchGreeting() {
+        const name = document.getElementById('name').value;
+        fetch('/api/greeting?name=' + name)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('greetingResult').textContent = data;
+            });
+    }
+
+    function fetchAllGreetings() {
+        fetch('/api/greetings')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('greetingsList');
+                list.innerHTML = '';
+                data.forEach(greeting => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = greeting;
+                    list.appendChild(listItem);
+                });
+            });
+    }
+</script>
 </body>
 </html>
