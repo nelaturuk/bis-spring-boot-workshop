@@ -14,8 +14,7 @@
 
 <p id="greetingResult"></p>
 
-<button type="button" onclick="fetchAllGreetings()">Get All Greetings</button>
-
+<h2>Stored Greetings:</h2>
 <ul id="greetingsList"></ul>
 
 <script>
@@ -25,6 +24,7 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('greetingResult').textContent = data;
+                fetchAllGreetings(); // Update the list after adding a new greeting
             });
     }
 
@@ -36,11 +36,14 @@
                 list.innerHTML = '';
                 data.forEach(greeting => {
                     const listItem = document.createElement('li');
-                    listItem.textContent = greeting;
+                    listItem.textContent = greeting.content;
                     list.appendChild(listItem);
                 });
             });
     }
+
+    // Load the greetings when the page loads
+    window.onload = fetchAllGreetings;
 </script>
 </body>
 </html>
