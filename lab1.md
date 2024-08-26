@@ -26,19 +26,19 @@ In this lab, participants will set up a new Spring Boot project using their chos
         ![alt text](image.png)
    - Click "Next"
 
-1. **Add Dependencies:**
+2. **Add Dependencies:**
    - **Spring Web:** For building web, including RESTful applications using Spring MVC. This dependency will add all necessary libraries for creating a basic web application.
    - **Spring Boot DevTools:** For enabling hot-reloading and developer-friendly features.
    - **Lombok (optional):** If you want to reduce boilerplate code (getter, setter, constructors).
    - Click "Create"
     ![alt text](image-1.png)
 
-1. **Review the Generated Project Structure:**
+3. **Review the Generated Project Structure:**
    - In your IDE, you should see the following structure:
      - **src/main/java:** Your main application code.
      - **src/main/resources:** Application properties and static resources.
      - **pom.xml (or build.gradle):** Contains all project dependencies.
-        ![alt text](image-2.png)
+      ![alt text](image-2.png)
 
 2. **Modify Application Properties:**
    - Open `src/main/resources/application.properties` (or `application.yml` if you prefer YAML).
