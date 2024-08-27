@@ -205,7 +205,7 @@ In this lab, participants will integrate a database into their Spring Boot appli
    - Enter a name and click "Get Greeting". The greeting will be stored in the database and displayed in the list below the form.
    - Reload the page to verify that the stored greetings persist across sessions.
 
-8. **View the Database Using the H2 Console (Optional):**
+8. **View the Database Using the H2 Console:**
    - Access the H2 console by navigating to `http://localhost:8080/h2-console` in your browser.
    - Use the default settings (JDBC URL: `jdbc:h2:mem:testdb`, User Name: `sa`, Password: `password`) to log in.
    - You can view the contents of the `Greeting` table by executing a simple SQL query like `SELECT * FROM GREETING`.
