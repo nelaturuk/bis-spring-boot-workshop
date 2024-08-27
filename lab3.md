@@ -130,5 +130,3 @@ In this lab, participants will create RESTful endpoints using Spring Boot and co
 - **CORS Issues:** If you encounter Cross-Origin Resource Sharing (CORS) issues when making the API call, you may need to add CORS configuration to your Spring Boot application.
 - **REST Endpoint Not Working:** Ensure that the URL path is correct and that the server is running without errors.
 - **JavaScript Errors:** Check the browser's developer console for any JavaScript errors that might prevent the API call from working.
-
-These instructions should help participants create REST endpoints and connect them with their Thymeleaf front-end, providing a full-stack experience with Spring Boot.

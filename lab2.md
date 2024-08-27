@@ -109,4 +109,3 @@ In this lab, participants will learn how to create a simple Model-View-Controlle
 - **Thymeleaf Syntax Errors:** Double-check the Thymeleaf syntax, especially `th:text` and other expressions.
 - **Port Conflicts:** If your application doesn't start, make sure the port specified in `application.properties` is not in use by another application.
 
-These instructions should guide participants through setting up a simple Thymeleaf-based front end, helping them understand the basics of MVC in Spring Boot.

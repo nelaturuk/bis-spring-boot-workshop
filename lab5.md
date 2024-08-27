@@ -175,5 +175,3 @@ public class GreetingIntegrationTests {
 - **Test Failures:** Check the test output for detailed error messages. Make sure the application context and configurations are correct.
 - **Dependency Issues:** Ensure you have the correct dependencies for testing in your `pom.xml` or `build.gradle`.
 - **IDE Configuration:** Make sure your IDE is correctly configured to run JUnit tests.
-
-These instructions should help you set up basic tests for your Spring Boot application. If you have any more questions or need further assistance, feel free to ask!

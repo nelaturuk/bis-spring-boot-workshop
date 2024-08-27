@@ -220,4 +220,3 @@ In this lab, participants will integrate a database into their Spring Boot appli
 - **H2 Console Issues:** Double-check the URL and login credentials for the H2 console if you're unable to access it.
 - **REST Endpoint Issues:** Ensure that your endpoints are correctly mapped and that the repository is being injected properly.
 
-These instructions should help participants integrate a database with their Spring Boot application and connect it with their REST endpoints and front-end, providing a complete end-to-end web application experience.

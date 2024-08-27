@@ -76,5 +76,3 @@ In this lab, participants will set up a new Spring Boot project using their chos
 - **IDE Not Recognizing Dependencies:** Ensure your Maven or Gradle build is properly synced. In IntelliJ IDEA, use the "Reload" button in the Maven/Gradle tool window.
 - **Java Not Recognized:** Ensure Java is correctly installed and added to your system's PATH.
 - **Port Already in Use:** If port 8080 is occupied, choose a different port by modifying `server.port` in `application.properties`.
-
-These detailed instructions should guide participants smoothly through setting up their Spring Boot project and prepare them for the subsequent labs.
